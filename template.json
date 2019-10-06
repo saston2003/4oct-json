@@ -23,7 +23,7 @@
         "publicIpAddressSku": {
             "type": "string"
         },
-        "virtualMachineName": {
+        "virtualMachineName1": {
             "type": "string"
         },
         "virtualMachineRG": {
@@ -85,7 +85,7 @@
             }
         },
         {
-            "name": "[parameters('virtualMachineName')]",
+            "name": "[parameters('virtualMachineName1')]",
             "type": "Microsoft.Compute/virtualMachines",
             "apiVersion": "2019-03-01",
             "location": "[parameters('location')]",
@@ -118,7 +118,7 @@
                     ]
                 },
                 "osProfile": {
-                    "computerName": "[parameters('virtualMachineName')]",
+                    "computerName": "[parameters('virtualMachineName1')]",
                     "adminUsername": "[parameters('adminUsername')]",
                     "adminPassword": "[parameters('adminPassword')]",
                     "windowsConfiguration": {
